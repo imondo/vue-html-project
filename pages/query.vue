@@ -11,7 +11,7 @@
         <div class="book el-col-12" :key="index">
           <el-image
             class="book-image pointer"
-            src="/static/images/no_pic.png"
+            src="./images/no_pic.png"
             @click="handleDetail(book)"
           ></el-image>
           <div class="book-info">
@@ -38,7 +38,7 @@
 <script>
 module.exports = {
   components: {
-    'ly-search': httpVueLoader('/static/components/Search/index.vue')
+    'ly-search': httpVueLoader('./components/Search/index.vue')
   },
   data: function() {
     return {
