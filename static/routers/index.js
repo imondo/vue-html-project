@@ -2,17 +2,17 @@ const HTML_ROUTES = new VueRouter({
   routes: [
     {
       path: '/',
-      component: httpVueLoader('/static/pages/home.vue')
+      component: httpVueLoader('./pages/home.vue')
     },
     {
       path: '/query',
       name: 'Query',
-      component: httpVueLoader('/static/pages/query.vue')
+      component: httpVueLoader('./pages/query.vue')
     },
     {
       path: '/error',
       name: 'ErrorPage',
-      component: httpVueLoader('/static/pages/error.vue')
+      component: httpVueLoader('./pages/error.vue')
     },
   ]
 });
