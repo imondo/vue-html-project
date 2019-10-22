@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html,
+#app {
+  width: 100%;
+  min-height: 100%;
+  color: #666;
+  font-size: 12px;
+  font-family: Microsoft Yahei;
+  background-color: #f4f5f5;
+}
+
+.content {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.container {
+  padding: 10px 20px;
+}
+
+.el-input-group__append button.el-button {
+  color: #fff;
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+  border-radius: 0 4px 4px 0;
+}
+
+/* 书本样式 */
+.book .book-image,
+.book .book-info {
+  display: table-cell;
+}
+.book .book-info {
+  vertical-align: top;
+  padding-left: 15px;
+  text-align: left;
+}
+.book .book-title {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #212121;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.book .book-item {
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: rgb(102, 102, 102);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.errPage-container {
+  width: 800px;
+  max-width: 100%;
+  margin: 100px auto;
+}
+.pan-back-btn {
+  background: #008489;
+  color: #fff;
+  border: none !important;
+}
+.pan-gif {
+  margin: 0 auto;
+  display: block;
+}
+.pan-img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+.text-jumbo {
+  font-size: 60px;
+  font-weight: 700;
+  color: #484848;
+}
+.list-unstyled {
+  font-size: 14px;
+}
+.list-unstyled li {
+  padding-bottom: 5px;
+}
+.list-unstyled a {
+  color: #008489;
+  text-decoration: none;
+}
+.list-unstyled a:hover {
+  text-decoration: underline;
+}

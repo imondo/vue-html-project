@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="./plugins/theme/index.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/index.css"
+    />
+    <script src="./plugins/babel-polyfill/polyfill.min.js"></script>
+    <script src="//unpkg.com/vue"></script>
+    <script src="./plugins/httpVueLoader.js"></script>
+    <title>图书OPAC检索</title>
+  </head>
+  <body>
+    <div id="app">
+      <ly-head></ly-head>
+      <div class="content">
+        <div v-if="hasError">
+          <error-page/>         
+        </div>
+        <ly-home v-else/>
+      </div>
+    </div>
+  </body>
+
+  <script src="//unpkg.com/element-ui/lib/index.js"></script>
+  <script src="//unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./config.default.js"></script>
+  <script src="./utils/http.js"></script>
+  <script src="./index.js"></script>
+</html>
