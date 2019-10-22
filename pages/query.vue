@@ -38,7 +38,7 @@
 <script>
 module.exports = {
   components: {
-    'ly-search': httpVueLoader('./components/Search/index.vue')
+    'ly-search': httpVueLoader('../components/Search/index.vue')
   },
   data: function() {
     return {
