@@ -1,6 +1,3 @@
-language: node_js
-node_js:
-  - lts/*
 deploy:
   provider: pages
   skip-cleanup: true
