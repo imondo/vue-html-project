@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="home-wap" v-show="!isSearch">
+    <div class="home-wap">
       <h2>OPAC检索</h2>
       <el-input
         placeholder="题名  ISBN  著者  丛书名   出版社"
@@ -13,15 +13,11 @@
       </el-input>
       <p class="tip">多个关键词以空格相隔，可进行组合查询。例如：红楼梦 曹雪芹 人民文学出版社。</p>
     </div>
-    <ly-query :visible.sync="isSearch"/>
   </div>
 </template>
 
 <script>
 module.exports = {
-  components: {
-    'ly-query': httpVueLoader('./query.vue')
-  },
   provide() {
     return {
       home: this
@@ -35,7 +31,7 @@ module.exports = {
   },
   methods: {
     handleClick() {
-      this.isSearch = true;
+      this.$router.push({ name: 'Query' });
     }
   }
 };

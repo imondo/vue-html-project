@@ -19,13 +19,10 @@ module.exports = {
   },
   methods: {
     handleReload() {
-      const orgId = localStorage.getItem('OPAC_AUTH_ORGID');
-      window.location.href = this.reloadUrl(orgId);
+      this.$router.push({
+        path: '/'
+      });
       window.location.reload();
-    },
-    reloadUrl(orgId) {
-      const context = debugging ? 'http://127.0.0.1:8080' : getApi();
-      return context + '/static?' + orgId;
     }
   }
 };
